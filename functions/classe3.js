@@ -11,4 +11,4 @@ class Carro {
 
 // criando um objeto a partir da classe
 
-const carro = new Carro('Ford', 2004);
+const carro1 = new Carro('Ford', 2004);
