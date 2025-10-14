@@ -15,3 +15,10 @@ class Pessoa {
         }
     }
 }
+
+const pessoa = new Pessoa("João");
+console.log(pessoa.nome);
+
+pessoa.nome = "Li";
+pessoa.nome = "Lucas";
+console.log(pessoa.nome);
