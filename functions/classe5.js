@@ -5,14 +5,16 @@ class Produto{
     }
 
     set precoPositivo(precoAtual){
-        if (precoAtual.length < 3){
-
+        if (precoAtual.length < 0){
+            console.log('preços negativos não são permitidos!')
+        } else {
+            this.preco = precoAtual;
         }
 
     }
 
     get precoPositivo(){
-        
+        return console.log(this.preco);
     }
     
 }
