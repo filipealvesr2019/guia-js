@@ -14,7 +14,11 @@ class Produto{
     }
 
     get precoPositivo(){
-        return console.log(this.preco);
+        return console.log(`Produto: ${this.nome}, Preço: ${this.preco}`);
     }
     
 }
+
+const Produto1 = new Produto("camisa", -10);
+
+console.log(Produto1)
