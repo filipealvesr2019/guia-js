@@ -4,7 +4,7 @@ class Produto{
     this.preco = preco;
     }
 
-    set precoPositivo(precoAtual){
+    set preco(precoAtual){
         if (precoAtual.length < 0){
             console.log('preços negativos não são permitidos!')
         } else {
@@ -13,12 +13,16 @@ class Produto{
 
     }
 
-    get precoPositivo(){
-        return console.log(`Produto: ${this.nome}, Preço: ${this.preco}`);
+    get preco(){
+        return this.preco
+    }
+
+    get info() {
+        return `Produto: ${this.nome}, Preço: R$${this.preco}`
     }
     
 }
 
 const Produto1 = new Produto("camisa", -10);
 
-console.log(Produto1)
+console.log(Produto1.info)
