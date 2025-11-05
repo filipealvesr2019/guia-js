@@ -1,7 +1,13 @@
+import readline from "readline";
+
+const rl = readline.createIterface({
+    input: process.stdin,
+    output: process.stdout
+})
 
 function perguntar(pergunta) {
     return new Promise(resolve => {
-        rl.question(pergunta, resposta)
+        rl.question(pergunta, resposta => resolve(resposta))
     })
 }
 
