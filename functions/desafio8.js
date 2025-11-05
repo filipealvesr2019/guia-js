@@ -1,6 +1,6 @@
 import readline from "readline";
 
-const rl = readline.createIterface({
+const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 })
@@ -24,4 +24,7 @@ async function main() {
     console.log(`Sua media foi: ${media}`);
     console.log(resultado);
 
+    rl.close();
 }
+
+main();
